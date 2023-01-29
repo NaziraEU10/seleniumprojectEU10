@@ -58,7 +58,7 @@ Notes: It may also be necessary to write code to accept the accept cookies warni
         String priceValue= price.getText();
         System.out.println("Price: "+priceValue+" TL");
 
-        System.out.println("Stokta sadece "+stockStatus()+" kaldi.");
+        System.out.println("Stock: "+"Stokta sadece "+stockStatus()+" kaldi.");
     }
 
    public String stockStatus(){
