@@ -36,7 +36,7 @@ Notes: It may also be necessary to write code to accept the accept cookies warni
       //3. Check that the results are listed
         List<WebElement> results=Driver.getDriver().findElements(By.xpath("//div[*='SONUÇLAR']"));
         for(WebElement eachResult: results){
-            eachResult.click();
+            eachResult.getText();
         }
 
        //4. Click iPhone13 at the top of the list
