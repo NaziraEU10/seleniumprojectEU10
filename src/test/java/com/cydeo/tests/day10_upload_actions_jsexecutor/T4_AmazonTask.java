@@ -65,4 +65,5 @@ Notes: It may also be necessary to write code to accept the accept cookies warni
         WebElement element = Driver.getDriver().findElement(By.xpath("//*[@id=\"quantity\"]/option[1]"));
         return element.getText();
    }
+
 }
