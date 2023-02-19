@@ -31,7 +31,8 @@ public class ActionsPractices {
         //Scroll back up to "Home" link using PageUp button.
         actions.sendKeys(Keys.PAGE_UP, Keys.PAGE_UP).perform();
 
-        Driver.getDriver().close();
+        //Driver.getDriver().close();
+        Driver.closeDriver();
     }
 
        @Test
