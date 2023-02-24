@@ -9,6 +9,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
+
 public class T2_ExplicitWaitPractices {
 
   DynamicControlsPage dynamicControlsPage;
@@ -24,8 +26,10 @@ public class T2_ExplicitWaitPractices {
      dynamicControlsPage.removeButton.click();
 
         //4. wait until "loading bar disappears"
+        Driver.getDriver().manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         WebDriverWait wait=new WebDriverWait(Driver.getDriver(),10);
         wait.until(ExpectedConditions.invisibilityOf(dynamicControlsPage.loadingBar));
+
 
 
         //5. verify:
